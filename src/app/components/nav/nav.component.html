@@ -1,9 +1,8 @@
-<mat-toolbar>
-    <h1 (click)="home()">Pokedex</h1>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-  </button>
-    <button class="persona--nav" (click)="perfil()">
-    <img src="https://i.ibb.co/WnNnqXd/entrenador-pokemon.png" alt="">
-  </button>
-</mat-toolbar>
+<header class="header">
+  <div class="logo">
+    <img src="https://seeklogo.com/images/S/si_vale-logo-2D5B3DCE33-seeklogo.com.png" alt="Logo de Sivale">
+  </div>
+  <div class="fecha">
+    {{ fechaActual | date }}
+  </div>
+</header>

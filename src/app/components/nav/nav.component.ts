@@ -7,24 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  activeMenu = false;
-  constructor(
-    private router: Router
-  ) { }
+  fechaActual!: Date;
+
 
   ngOnInit(): void {
+    this.fechaActual = new Date();
   }
-
-  home(){
-    this.router.navigateByUrl('');
-   }
-
-   perfil(){
-    this.router.navigateByUrl('perfil');
-   }
-
-   toggleEntrenador(){
-     this.activeMenu = !this.activeMenu;
-   }
-
 }

@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { PokemonComponent } from './pages/pokemon/pokemon.component';
-import {PerfilComponent} from './pages/perfil/perfil.component';
 
 
 const routes: Routes = [
@@ -12,14 +11,8 @@ const routes: Routes = [
       path: '',
       component: HomeComponent,
   },
-  {
-    path: 'perfil',
-    component: PerfilComponent,
-  },
-  {
-    path:'pokemon/:id',
-    component: PokemonComponent
-  },
+
+
   {
 		path: '**',
 		component: ErrorComponent,
