@@ -16,10 +16,10 @@ export class PokemonsListComponent implements OnInit {
   totalPokemons: number = 0;
   totalPages: number = 0;
   showPokemonDetail = false;
+  selectedPokemon: any; // Objeto para almacenar el Pokémon seleccionado
 
   constructor(
     private pokemonService: PokemonesService,
-    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -45,9 +45,17 @@ export class PokemonsListComponent implements OnInit {
       });
   }
 
-  // Navegar al detalle del Pokémon
+  // Abrir el modal con detalles del Pokémon seleccionado
   getPokemon(pokemon: any) {
-    this.router.navigateByUrl(`pokemon/${pokemon.id}`);
+    this.selectedPokemon = pokemon; // Guardar los detalles del Pokémon seleccionado
+    console.log(this.selectedPokemon);
+    this.showPokemonDetail = true; // Mostrar el modal
+  }
+
+  // Cerrar el modal
+  closeModal() {
+    this.showPokemonDetail = false;
+    this.selectedPokemon = null; // Limpiar el Pokémon seleccionado
   }
 
   // Ir a la página anterior

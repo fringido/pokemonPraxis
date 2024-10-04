@@ -8,7 +8,6 @@ import { PokemonsListComponent } from './components/pokemons-list/pokemons-list.
 import { NavComponent } from './components/nav/nav.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { HomeComponent } from './pages/home/home.component';
-import { PokemonComponent } from './pages/pokemon/pokemon.component';
 import { AppRoutingModule } from './app-routing.module';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -21,7 +20,6 @@ import { FilterPipe } from './pipe/filter.pipe';
     NavComponent,
     ErrorComponent,
     HomeComponent,
-    PokemonComponent,
     FilterPipe,
   ],
   imports: [
