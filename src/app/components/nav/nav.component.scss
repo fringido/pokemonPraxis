@@ -1,0 +1,43 @@
+@import "../../../styles.scss";
+
+.mat-toolbar {
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 18px #b8b8b8,
+    -5px -5px 18px #ffffff;
+  padding: 10px;
+
+  & h1 {
+    color: #darkPrincipal;
+
+    font-weight: 900;
+
+
+  }
+}
+
+.persona--nav {
+  background: none;
+  border: none;
+
+  img {
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    box-shadow: 7px 7px 14px #bebebe,
+      -7px -7px 14px #ffffff;
+    width: 65px;
+  }
+
+}
+
+.boton_espacio {
+
+  & img {
+    width: 40px;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

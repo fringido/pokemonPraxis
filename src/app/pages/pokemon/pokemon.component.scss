@@ -1,0 +1,72 @@
+
+  :root{
+	--white-text:#fff;
+	--background:#c8e8f1;
+	--black-text:rgb(68, 66, 66)
+	--prueba: (180deg,#21c8f6,#637bff);
+}
+
+.boton--back{
+  & button{
+    color: red;
+    margin-top: 23px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 28px;
+    border: none;
+    border-radius: 41px;
+background: #e0e0e0;
+box-shadow:  11px 11px 21px #989898,
+             -11px -11px 21px #ffffff;
+    }
+  }
+.card-pokemon{
+  background-color: linear-gradient(180deg,#21c8f6,#637bff);
+  }
+
+.container{
+   margin: 5px;
+   display: grid;
+
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+
+    & .card{
+width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 16px #afafaf,
+      -8px -8px 16px #ffffff;
+    display: grid;
+    text-align: center;
+    text-transform: capitalize;
+      }
+
+      h3{
+        text-align: start;
+        font-size: 18px;
+        margin: 10px;
+        }
+          img{
+            justify-content: center;
+            width: 100%;
+            }
+  }
+
+  .container--stats{
+    margin-bottom: 20px;
+    }
+
+/*media queries*/
+//tablet
+@media screen and (min-width: 40em)  {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+

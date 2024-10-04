@@ -1,0 +1,48 @@
+<div class="boton--back">
+    <button (click)="home()"><----- Regresar</button>
+</div>
+<div class="container">
+
+    <div class="card card-pokemon">
+        <div class="card--container">
+            <div>
+                <img src="{{pokemonImg}}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card--container">
+            <div>
+                <h1>{{pokemon.name}}</h1>
+                <h6>#{{pokemon.id}}</h6>
+
+            </div>
+            <h2>Tipo: {{pokemonType}}</h2>
+            <h2>Height: {{pokemon.height}}</h2>
+            <h2>Weight: {{pokemon.weight}}</h2>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="card--container">
+            <div class="container--stats">
+                <h1>Estadisticas</h1>
+                <h3>HP: {{pokemon.stats[5].base_stat}}</h3>
+                <mat-progress-bar value="{{pokemon.stats[5].base_stat}}"></mat-progress-bar>
+
+                <h3>Ataque: {{pokemon.stats[4].base_stat}}</h3>
+                <mat-progress-bar value="{{pokemon.stats[4].base_stat}}"></mat-progress-bar>
+
+                <h3>Ataque: {{pokemon.stats[3].base_stat}}</h3>
+                <mat-progress-bar value="{{pokemon.stats[3].base_stat}}"></mat-progress-bar>
+
+                <h3>Sp. Attack: {{pokemon.stats[2].base_stat}}</h3>
+                <mat-progress-bar value="{{pokemon.stats[2].base_stat}}"></mat-progress-bar>
+
+                <h3>Sp. Defense: {{pokemon.stats[1].base_stat}}</h3>
+                <mat-progress-bar value="{{pokemon.stats[1].base_stat}}"></mat-progress-bar>
+            </div>
+        </div>
+    </div>
+</div>

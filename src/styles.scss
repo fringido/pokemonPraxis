@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+$header-heig: 3rem;
+// ---COLORES---
+$color-primario: #cab9ec;
+$ligth: #eee;
+$darkPrincipal: #212121;
+//---TAMAÑO LETRAS---
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+$normalfont: 1.4rem;
+$big-font: 3.2rem;
+$h1-fonr: 2.4rem;
+$h2-font: 20rem;
+$h3-font: 1.8rem;
+$normal-font: 1.5rem;
+$small-font: 1.3rem;
+$smaller-font: 1.2rem;
+//----ANCHO DE FUENTE---
+$font-medium: 500;
+$font-bold: 600;
+//---MARGINS---
+$mb-0-25:25rem;
+$mb-0-5:.5rem;
+$mb-0-75: .75rem;
+$mb-1:1rem;
+$mb-1-5:1.5rem;
+$mb-2:2rem;
+$mb-3: 3rem;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    // scroll-behavior: smooth;
+    // background-image: url('/assets/images/fondo.jpg');
+}
+
+body {
+    // filter: blur(4px);
+    // backdrop-filter: blur(2px);
+    background:#e0e0e0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: $normal-font;
+    color: $darkPrincipal;
+}
+
+/* Importing Bootstrap SCSS file. */
+
